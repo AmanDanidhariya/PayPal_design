@@ -1,12 +1,12 @@
 import { useState } from "react";
 import payPalLogo from "../assets/paypal.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-blue-800 relative">
+    <nav className="bg-white border-b border-blue-800 sticky top-0">
       <div
         className={`max-w-8xl mx-auto px-2 sm:px-6 lg:px-8 ${
           isOpen && "hidden"
@@ -14,56 +14,56 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center z-10">
-            <Link to="/" className="flex-shrink-0 flex items-center">
+            <NavLink to="/" className="flex-shrink-0 flex items-center">
               <img
                 className="block h-12 w-auto"
                 src={payPalLogo}
                 alt="Paypal"
               />
-            </Link>
+            </NavLink>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <Link
+                <NavLink
                   to="/"
                   className=" text-darkBlue px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 "
                 >
                   Personal
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/"
                   className="text-darkBlue px-3 py-2 rounded-md text-sm font-medium  hover:bg-gray-100"
                 >
                   Business
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/"
                   className="text-darkBlue hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Developer
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/"
                   className="text-darkBlue hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Help
-                </Link>
+                </NavLink>
               </div>
             </div>
           </div>
           <div className="hidden sm:flex sm:items-center">
             <div className="ml-4 flex items-center">
-              <Link
+              <NavLink
                 to="/login"
                 className="text-center border border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white duration-100 px-6 py-1.5 rounded-full text-sm font-medium"
               >
                 Login
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/signup"
-                className="text-center bg-darkBlue text-white hover:bg-white hover:text-darkBlue hover:border hover:border-darkBlue duration-100 px-6 py-2 rounded-full text-sm font-medium ml-2"
+                className="text-center bg-darkBlue text-white hover:bg-white hover:text-darkBlue hover:border hover:border-darkBlue duration-100 px-6 py-1.5 rounded-full text-sm font-medium ml-2"
               >
                 Signup
-              </Link>
+              </NavLink>
             </div>
           </div>
           <div className="-mr-2 flex sm:hidden">
@@ -121,9 +121,9 @@ const Navbar = () => {
         } fixed z-50 inset-y-0 left-0 w-64 bg-white shadow-lg transition-transform duration-500 transform`}
       >
         <div className="flex items-center justify-between px-2 pt-2 pb-3">
-          <Link to="/" className="flex-shrink-0 flex items-center">
+          <NavLink to="/" className="flex-shrink-0 flex items-center">
             <img className="block h-12 w-auto" src={payPalLogo} alt="Paypal" />
-          </Link>
+          </NavLink>
           <button
             onClick={() => setIsOpen(false)}
             type="button"
@@ -147,43 +147,43 @@ const Navbar = () => {
           </button>
         </div>
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <Link
+          <NavLink
             to="/"
             className="text-center text-darkBlue hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium"
           >
             Personal
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/"
             className="text-center text-darkBlue hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium"
           >
             Business
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/"
             className="text-center text-darkBlue hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium"
           >
             Developer
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/"
             className="text-center text-darkBlue hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium"
           >
             Help
-          </Link>
+          </NavLink>
           <div className="mt-6">
-            <Link
-              to="/login"
+            <NavLink
+              to="/"
               className="text-center border border-darkBlue text-darkBlue hover:bg-darkBlue hover:text-white duration-100 px-4 py-2 rounded-md text-sm font-medium block"
             >
               Login
-            </Link>
-            <Link
-              to="/signup"
+            </NavLink>
+            <NavLink
+              to="/"
               className="text-center bg-darkBlue text-white hover:bg-white hover:text-darkBlue hover:border hover:border-darkBlue duration-100 px-4 py-2 rounded-md text-sm font-medium mt-2 w-full block"
             >
               Signup
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
