@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-blue-800 sticky top-0">
+    <nav className="bg-white border-b border-blue-800 sticky top-0 z-50">
       <div
         className={`max-w-8xl mx-auto px-2 sm:px-6 lg:px-8 ${
           isOpen && "hidden"

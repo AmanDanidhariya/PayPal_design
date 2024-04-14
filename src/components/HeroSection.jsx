@@ -22,12 +22,12 @@ const HeroSection = () => {
         <img
           src={img_2}
           alt="code"
-          className="absolute rounded-[25px] h-full bg-cover left-40 sm:left-1/3"
+          className="absolute rounded-[15px] h-full bg-cover left-40 sm:left-1/3"
         />
         <img
           src={img_3}
           alt="mobile_device"
-          className="absolute rounded-[25px] h-full bg-cover left-60 sm:left-2/4"
+          className="absolute rounded-[15px] h-full bg-cover left-60 sm:left-2/4"
         />
       </div>
     </div>
