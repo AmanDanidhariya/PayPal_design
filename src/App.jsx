@@ -11,6 +11,7 @@ import RiskManagement from "./components/RiskManagement";
 import Security from "./components/Security";
 import { useEffect } from "react";
 import VideoContent from "./components/VideoContent";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   // useEffect(() => {
@@ -33,7 +34,8 @@ function App() {
       <Orchestration />
       <RiskManagement />
       <FeatureModule />
-      <VideoContent/>
+      <VideoContent />
+      <Testimonials />
     </div>
   );
 }

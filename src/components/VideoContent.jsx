@@ -15,7 +15,9 @@ const VideoContent = () => {
         <FiPlayCircle className="text-6xl text-white hover:text-slate-300 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer" />
       </div>
       <div className="flex flex-col gap-y-6 sm:w-[40%] mt-7">
-        <p className="text-2xl font-medium sm:text-4xl">Your partner for innovation</p>
+        <p className="text-2xl font-medium sm:text-4xl">
+          Your partner for innovation
+        </p>
         <p className="font-medium">
           See how Pressed partnered with PayPal to help their development team
           build innovative solutions with limited resources--all powered by
