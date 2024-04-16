@@ -10,7 +10,7 @@ const HeroSection = () => {
         <p className=" text-2xl sm:text-3xl md:text-5xl">Global payment</p>
         <p className="sm:text-5xl text-2xl">processing solutions</p>
         <div className="text-justify mx-2 md:text-xl md:mx-10 sm:mx-14  text-sm">
-          Grow and optimize your business with a flexible,end-to-end payments
+          Grow and optimize your business with a flexible, end-to-end payments
           platform powered by Braintree technology
         </div>
         <button className="bg-pantone text-white hover:text-pantone hover:bg-gray-200 text-md rounded-full py-3 px-6 font-medium">

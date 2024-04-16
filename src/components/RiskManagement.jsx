@@ -4,7 +4,7 @@ import mouse from "../assets/mouse_1.avif";
 
 const RiskManagement = () => {
   return (
-    <div className=" bg-gray-200 h-max w-full mt-10 px-4 py-10">
+    <div className=" bg-gray-100 h-max w-full mt-10 px-4 py-10">
       <div className="flex flex-col gap-y-4 sm:flex-row justify-between sm:px-28">
         <div className="sm:w-[60%]">
           <img src={mouse} alt="person_with_tea_cup" className="rounded-lg " />
@@ -20,7 +20,7 @@ const RiskManagement = () => {
           </p>
           <div className="flex text-[#106db0] text-sm font-semibold">
             Learn more about managing risk
-            <button className="bg-[#8ecde6] hover:text-white rounded-full pr-2 ml-3">
+            <button className="bg-[#8ecde6] hover:text-black rounded-full pr-2 ml-3">
               <FaArrowRightLong className="text-xl" />
             </button>
           </div>
