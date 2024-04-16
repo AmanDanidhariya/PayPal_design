@@ -21,7 +21,7 @@ const Marketing = () => {
     },
   ];
   return (
-    <div className="bg-[#f5f5f5] px-4 w-full h-max py-4">
+    <div className="bg-[#f5f5f5] px-4 w-full h-max py-4 sm:flex sm:px-32 sm:gap-x-6 sm:py-8">
       {cardData.map((card) => (
         <Card
           key={card.id}
