@@ -31,7 +31,7 @@ const FeatureModule = () => {
   //   };
   // }, []);
   return (
-    <div className="h-max bg-darkBlue text-white  px-4 py-8 w-full sm:flex sm:h-[150vh]">
+    <div className="h-max bg-darkBlue text-white  px-4 py-8 w-full sm:flex">
       <div className="first_half flex flex-col justify-center gap-y-4 sm:p-8">
         <p className="text-2xl pt-2 font-medium sm:text-5xl">
           Our modular solution can grow you

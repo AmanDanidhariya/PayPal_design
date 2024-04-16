@@ -10,6 +10,9 @@ export default {
         darkBlue: "#162d86",
         pantone: "#152c8f",
       },
+      backgroundImage: {
+        'video-image': "url('/assets/oats.avif')",
+      }
     },
   },
   plugins: [],
