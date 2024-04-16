@@ -1,4 +1,5 @@
-import React from "react";
+import  { useEffect } from "react";
+import "../locomotive-scroll.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { CiCircleCheck } from "react-icons/ci";
 
@@ -20,13 +21,22 @@ const FeatureModule = () => {
     "24/7monitoring & optimization",
   ];
 
+  // useEffect(() => {
+  //   const scroll = new LocomotiveScroll({
+  //     el: document.querySelector("#feature_list"),
+  //     smooth: true,
+  //   });
+  //   return () => {
+  //     scroll.destroy();
+  //   };
+  // }, []);
   return (
-    <div className="h-max bg-darkBlue text-white px-4 py-8 w-full">
-      <div className="first_half flex flex-col gap-y-4">
-        <p className="text-2xl pt-2 font-medium">
+    <div className="h-max bg-darkBlue text-white  px-4 py-8 w-full sm:flex sm:h-[150vh]">
+      <div className="first_half flex flex-col justify-center gap-y-4 sm:p-8">
+        <p className="text-2xl pt-2 font-medium sm:text-5xl">
           Our modular solution can grow you
         </p>
-        <p className="text-sm">
+        <p className="text-sm sm:text-lg">
           Turn on the features you want, connect with the partners in your
           payments ecosystem, and keep the rest in your back pocket for whatever
           comes next.
@@ -38,7 +48,7 @@ const FeatureModule = () => {
           </button>
         </div>
       </div>
-      <ul className="feature_list h-96 my-4 py-8 w-full text-black bg-white rounded flex flex-col items-center overflow-x-auto">
+      <ul id="feature_list" className="feature_list h-96 my-4 py-8 w-full text-black bg-white shadow-xl rounded flex flex-col items-center overflow-y-auto sm:h-max">
         {featureList.map((feature, index) => {
           return (
             <li

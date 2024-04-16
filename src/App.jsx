@@ -12,15 +12,15 @@ import Security from "./components/Security";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("#main_div"),
-      smooth: true,
-    });
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
+  // useEffect(() => {
+  //   const scroll = new LocomotiveScroll({
+  //     el: document.querySelector("#main_div"),
+  //     smooth: true,
+  //   });
+  //   return () => {
+  //     scroll.destroy();
+  //   };
+  // }, []);
 
   return (
     <div id="main_div" className="box-border m-0 overflow-hidden ">
