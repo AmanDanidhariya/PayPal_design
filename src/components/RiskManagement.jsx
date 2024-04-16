@@ -4,7 +4,7 @@ import mouse from "../assets/mouse_1.avif";
 
 const RiskManagement = () => {
   return (
-    <div className=" bg-gray-100 h-max w-full mt-10 px-4 py-10">
+    <div className=" bg-[#f5f5f5] h-max w-full mt-10 px-4 py-10">
       <div className="flex flex-col gap-y-4 sm:flex-row justify-between sm:px-28">
         <div className="sm:w-[60%]">
           <img src={mouse} alt="person_with_tea_cup" className="rounded-lg " />

@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import VideoContent from "./components/VideoContent";
 import Testimonials from "./components/Testimonials";
 import About_us from "./components/About_us";
+import Marketing from "./components/Marketing";
 
 function App() {
   // useEffect(() => {
@@ -38,6 +39,7 @@ function App() {
       <VideoContent />
       <Testimonials />
       <About_us />
+      <Marketing />
     </div>
   );
 }

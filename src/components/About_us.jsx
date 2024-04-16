@@ -41,7 +41,7 @@ const About_us = () => {
       </div>
       <div className=" border-t border-gray-300 mt-10 w-[100%] mx-auto sm:hidden"></div>
       <div className="flex flex-col gap-y-4 sm:gap-x-10 sm:flex-row sm:w-full sm:py-8">
-        <img src={analysis} alt="analysis_image" className="w-[30%] h-full"/>
+        <img src={analysis} alt="analysis_image" className="w-full sm:w-[30%] h-full"/>
         <div className="flex flex-col gap-y-6">
           <p className="font-bold mt-4">
             Report: Forrester economic impact analysis
