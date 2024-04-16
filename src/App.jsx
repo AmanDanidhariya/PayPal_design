@@ -1,6 +1,6 @@
 import "./App.css";
+import "./locomotive-scroll.css";
 import LocomotiveScroll from "locomotive-scroll";
-import "./locomotive-scroll.css"
 import Business from "./components/Business";
 import FeatureModule from "./components/FeatureModule";
 import HeroSection from "./components/HeroSection";
