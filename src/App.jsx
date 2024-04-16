@@ -12,6 +12,7 @@ import Security from "./components/Security";
 import { useEffect } from "react";
 import VideoContent from "./components/VideoContent";
 import Testimonials from "./components/Testimonials";
+import About_us from "./components/About_us";
 
 function App() {
   // useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
       <FeatureModule />
       <VideoContent />
       <Testimonials />
+      <About_us />
     </div>
   );
 }
