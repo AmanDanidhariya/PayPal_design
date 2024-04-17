@@ -14,6 +14,7 @@ import VideoContent from "./components/VideoContent";
 import Testimonials from "./components/Testimonials";
 import About_us from "./components/About_us";
 import Marketing from "./components/Marketing";
+import Footer from "./components/Footer";
 
 function App() {
   // useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
       <Testimonials />
       <About_us />
       <Marketing />
+      <Footer />
     </div>
   );
 }
