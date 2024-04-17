@@ -1,5 +1,4 @@
 import { BiSolidQuoteLeft } from "react-icons/bi";
-
 import bag from "../assets/bag_2.avif";
 
 const Testimonials = () => {

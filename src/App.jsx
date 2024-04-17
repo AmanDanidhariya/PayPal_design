@@ -17,15 +17,15 @@ import Marketing from "./components/Marketing";
 import Footer from "./components/Footer";
 
 function App() {
-  // useEffect(() => {
-  //   const scroll = new LocomotiveScroll({
-  //     el: document.querySelector("#main_div"),
-  //     smooth: true,
-  //   });
-  //   return () => {
-  //     scroll.destroy();
-  //   };
-  // }, []);
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("#main_div"),
+      smooth: true,
+    });
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
 
   return (
     <div id="main_div" className="box-border m-0 overflow-hidden ">

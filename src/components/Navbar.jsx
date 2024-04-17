@@ -1,6 +1,6 @@
 import { useState } from "react";
 import payPalLogo from "../assets/paypal.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -116,7 +116,7 @@ const Navbar = () => {
         />
       )}
       <div
-        className={`sm:hidden ${
+        className={`sm:hidden  ${
           isOpen ? "translate-x-0 ease-out" : "-translate-x-full ease-in"
         } fixed z-50 inset-y-0 left-0 w-64 bg-white shadow-lg transition-transform duration-500 transform`}
       >

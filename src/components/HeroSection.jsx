@@ -1,4 +1,5 @@
 import React from "react";
+import { FaChevronUp } from "react-icons/fa";
 import img_1 from "../assets/img_1.avif";
 import img_2 from "../assets/img_2.avif";
 import img_3 from "../assets/img_3.avif";
